@@ -1,3 +1,4 @@
+int count = 0;
 void setup() {
   pinMode(2, INPUT);
   pinMode(13, OUTPUT);
@@ -6,7 +7,6 @@ void setup() {
 
 void loop() {
   int in = digitalRead(2);
-  int count = 0;
   if(in == LOW){
     digitalWrite(13, LOW);
     delay(1000);
